@@ -1,0 +1,281 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5e7e7;
+}
+
+.container {
+    position: relative;
+    width: 350px;
+    background: url('images/background.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 182, 193, 0.5); /* Pink transparent overlay */
+    z-index: 0;
+}
+
+.header, .welcome-message, .form-container {
+    position: relative;
+    z-index: 1;
+}
+
+.header .logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+.header h1 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #7a3b3b;
+}
+
+.header p {
+    font-size: 12px;
+    color: #7a3b3b;
+}
+
+.welcome-message h2 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #7a3b3b;
+}
+.books-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+
+.form-container p {
+    font-size: 14px;
+    color: #7a3b3b;
+    margin: 5px 0;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group .icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #7a3b3b;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-button:hover {
+    background-color: #5e2c2c;
+}
+
+.policies button {
+    background-color: transparent;
+    border: none;
+    color: #7a3b3b;
+    cursor: pointer;
+}
+
+.policies button:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f58;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    padding: 10px;
+    background-color: #f58;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info div {
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.logout-container {
+    position: absolute;
+    top: 10%;
+    left: 200px; /* Position to the right of the avatar */
+    transform: translateY(-50%);
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar:hover + .logout-container,
+.logout-container:hover {
+    display: block; /* Show logout on hover */
+}
+
+#logout-button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.due-date {
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: palevioletred;
+}
+
+nav button {
+    flex: 1;
+    padding: 10px;
+    color: lightpink;
+    background-color: maroon;
+    border: none;
+    cursor: pointer;
+}
+.nav-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Added padding for space around icons */
+}
+
+
+nav button.active {
+    background-color: #555;
+}
+
+.search-bar {
+    padding: 10px;
+    background-color: #D14795;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #D7A1A1;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: 45%;
+    margin: 10px 0;
+    background-color: #8C5252;;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 10px;
+    background-color: #D14795;
+    text-align: center;
+}
+
+.nav-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+

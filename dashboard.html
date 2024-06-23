@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <div class="user-info">
+                <div>
+                    <h2 id="fullname-display"></h2>
+                    <p>3rd Year - BSCPE</p>
+                </div>
+                <img src="images/user-avatar.jpg" alt="User Avatar" class="avatar">
+            </div>
+            <div class="due-date">
+                <p>Due date of borrowed book:</p>
+                <p>Wednesday - June 26, 2024 @5pm</p>
+            </div>
+        </header>
+        <nav>
+            <button class="active">Recommend</button>
+            <button>Trending</button>
+            <button>Newest</button>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search your favorite books...">
+        </div>
+        <main>
+            <div class="book">
+                <img src="images/robotics.jpg" alt="Robotics Book">
+                <div class="book-info">
+                    <h3>Robotics</h3>
+                    <p>A Comprehensive Guide from Beginner to Expert</p>
+                    <p>Borrowed: 12 | Available: 3</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/microprocessors.jpg" alt="Microprocessors Book">
+                <div class="book-info">
+                    <h3>Microprocessors and Microcontrollers</h3>
+                    <p>From Basics to Advanced Applications</p>
+                    <p>Borrowed: 0 | Available: 6</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/differential-equations.jpg" alt="Differential Equations Book">
+                <div class="book-info">
+                    <h3>A First Course in Differential Equations</h3>
+                    <p>J. David Logan</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/physics.jpg" alt="Physics Book">
+                <div class="book-info">
+                    <h3>Physics: Principles and Problems</h3>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/clean-code.jpg" alt="Clean Code Book">
+                <div class="book-info">
+                    <h3>Clean Code: A Handbook of Agile Software Craftsmanship</h3>
+                    <p>Robert C. Martin</p>
+                    <p>Borrowed: 10 | Available: 5</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/design-patterns.jpg" alt="Design Patterns Book">
+                <div class="book-info">
+                    <h3>Design Patterns: Elements of Reusable Object-Oriented Software</h3>
+                    <p>Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides</p>
+                    <p>Borrowed: 8 | Available: 7</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/introduction-to-algorithms.jpg" alt="Introduction to Algorithms Book">
+                <div class="book-info">
+                    <h3>Introduction to Algorithms</h3>
+                    <p>Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein</p>
+                    <p>Borrowed: 15 | Available: 2</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/computer-networking.jpg" alt="Computer Networking Book">
+                <div class="book-info">
+                    <h3>Computer Networking: A Top-Down Approach</h3>
+                    <p>James F. Kurose, Keith W. Ross</p>
+                    <p>Borrowed: 5 | Available: 10</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/structure-and-interpretation.jpg" alt="Structure and Interpretation of Computer Programs Book">
+                <div class="book-info">
+                    <h3>Structure and Interpretation of Computer Programs</h3>
+                    <p>Harold Abelson, Gerald Jay Sussman</p>
+                    <p>Borrowed: 7 | Available: 8</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/artificial-intelligence.jpg" alt="Artificial Intelligence Book">
+                <div class="book-info">
+                    <h3>Artificial Intelligence: A Modern Approach</h3>
+                    <p>Stuart Russell, Peter Norvig</p>
+                    <p>Borrowed: 12 | Available: 4</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/computer-organization.jpg" alt="Computer Organization and Design Book">
+                <div class="book-info">
+                    <h3>Computer Organization and Design: The Hardware/Software Interface</h3>
+                    <p>David A. Patterson, John L. Hennessy</p>
+                    <p>Borrowed: 9 | Available: 6</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/the-pragmatic-programmer.jpg" alt="The Pragmatic Programmer Book">
+                <div class="book-info">
+                    <h3>The Pragmatic Programmer: Your Journey to Mastery</h3>
+                    <p>Andrew Hunt, David Thomas</p>
+                    <p>Borrowed: 11 | Available: 3</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/code-complete.jpg" alt="Code Complete Book">
+                <div class="book-info">
+                    <h3>Code Complete: A Practical Handbook of Software Construction</h3>
+                    <p>Steve McConnell</p>
+                    <p>Borrowed: 13 | Available: 2</p>
+                </div>
+            </div>
+            <div class="book">
+                <img src="images/operating-system-concepts.jpg" alt="Operating System Concepts Book">
+                <div class="book-info">
+                    <h3>Operating System Concepts</h3>
+                    <p>Abraham Silberschatz, Peter B. Galvin, Greg Gagne</p>
+                    <p>Borrowed: 14 | Available: 4</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="nav-icons">
+                <img src="images/home-icon.jpg" alt="Home">
+                <img src="images/search-icon.jpg" alt="Search">
+                <img src="images/settings-icon.jpg" alt="Settings">
+            </div>
+        </footer>
+    </div>
+    <div class="logout-container" id="logout-container">
+        <button id="logout-button">Log Out</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the full name from localStorage
+            const fullname = localStorage.getItem('fullname');
+            if (fullname) {
+                document.getElementById('fullname-display').textContent = fullname;
+            } else {
+                document.getElementById('fullname-display').textContent = 'Guest';
+            }
+
+            // Set active state for navigation buttons
+            document.querySelectorAll('nav button').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                });
+            });
+
+            // Basic search functionality
+            const searchBar = document.querySelector('.search-bar input');
+            searchBar.addEventListener('input', () => {
+                console.log(`Searching for: ${searchBar.value}`);
+                // Implement actual search functionality here
+            });
+
+            // Toggle logout container visibility
+            const avatar = document.querySelector('.avatar');
+            const logoutContainer = document.getElementById('logout-container');
+            avatar.addEventListener('click', () => {
+                logoutContainer.style.display = logoutContainer.style.display === 'none' ? 'block' : 'none';
+            });
+
+            // Handle logout
+            const logoutButton = document.getElementById('logout-button');
+            logoutButton.addEventListener('click', () => {
+                localStorage.removeItem('fullname');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>

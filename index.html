@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CICTE Library Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" alt="Western Leyte College Logo" class="logo">
+            <h1>WESTERN LEYTE COLLEGE OF ORMOC, INC.</h1>
+            <p>A. Bonifacio St., Ormoc City, Leyte, 6541, Philippines</p>
+        </div>
+        <div class="welcome-message">
+            <h2>WELCOME TO CICTE LIBRARY</h2>
+            <img src="images/books.png" alt="Books" class="books-image">
+        </div>
+        <div class="form-container">
+            <p>Let's create an account</p>
+            <p>Enter your school email to sign up for this app</p>
+            <form id="signup-form">
+                <div class="input-group">
+                    <img src="images/fullname-icon.jpg" alt="Full Name Icon" class="icon">
+                    <input type="text" id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <img src="images/username-icon.jpg" alt="Username Icon" class="icon">
+                    <input type="text" id="username" placeholder="Username (e.g., john_doe@wlcormoc.edu.ph)" required>
+                </div>
+                <div class="input-group">
+                    <img src="images/password-icon.jpg" alt="Password Icon" class="icon">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <img src="images/confirm-password-icon.jpg" alt="Confirm Password Icon" class="icon">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="signup-button">Sign Up</button>
+                </form>
+            <div class="policies">
+                <button onclick="openTerms()">Terms of Service</button>
+                <button onclick="openPrivacy()">Privacy Policy</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script
+</body>
+</html>  
